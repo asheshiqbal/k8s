@@ -1,0 +1,42 @@
+*** k8s - container orchestrator
+      workload placement
+      infra abstruction
+      desired state
+
+*** k8s API - RESTful API over HTTP using JSON
+       API Objects - collection of primitives to represent system's state. Declarative or Imperative.
+            Pods - one or more containers. Ephemeral.
+            Controllers - defines the desired state
+                  ReplicaSet
+                  Deployment
+            Services - networking abstraction for access to pods which adds persistency to the ephemeral pods
+            Storage - persistent volume defined at the cluster level
+
+*** k8s Architecture
+      Control Plane Node/Master Node
+            API Server - stateless, interaction is done via kubectl
+            etcd - cluster datastore, preserves state of the system
+            Scheduler
+            Controller Manager
+            Cluster Add-on Pods - DNS, Ingress Controller, Dashboard, Network Overlays
+      Node/Worker Node
+            Kubelet
+            Kube-proxy
+            Container Runtime
+
+*** Installation
+      Cloud: IaaS - virtual machine, PaaS - managed service
+      kubeadm
+      CRI (Container Runtime Interface) - containerd/docker/CRI-O
+      Network Ports
+            6443 : API
+            2379-2380 : etcd
+            10250 : Kubelet
+            10251 : Scheduler
+            10252 : Controller Manager
+            30000-32767 : NodePort
+      Packages
+            containerd
+            kubelet
+            kubeadm
+            kubectl
