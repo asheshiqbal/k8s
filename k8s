@@ -1,3 +1,6 @@
+CI - building code from git and send to container registry using Jenkins ??
+CD - from container registry to pod ??
+
 *** k8s - container orchestrator
       workload placement
       infra abstruction
