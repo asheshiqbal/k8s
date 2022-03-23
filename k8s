@@ -7,13 +7,14 @@ CD - from container registry to pod ??
       desired state
 
 *** k8s API - RESTful API over HTTP using JSON
-       API Objects - collection of primitives to represent system's state. Declarative or Imperative.
+       API Objects - collection of primitives to represent system's state. 
             Pods - one or more containers. Ephemeral.
             Controllers - defines the desired state
                   ReplicaSet
                   Deployment
             Services - networking abstraction for access to pods which adds persistency to the ephemeral pods
             Storage - persistent volume defined at the cluster level
+       Configuration - Declarative or Imperative.
 
 *** k8s Architecture
       Control Plane Node/Master Node
