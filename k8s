@@ -12,7 +12,7 @@ CD - from container registry to pod ??
             Controllers - creates pods, defines the desired state
                   Deployment
                   ReplicaSet
-            Services - networking abstraction for access to pods which adds persistency to the ephemeral pods
+            Services - networking abstraction for access to pods thereby adding persistency to the ephemeral pods
             Storage - persistent volume defined at the cluster level
        Configuration - Declarative or Imperative.
 
