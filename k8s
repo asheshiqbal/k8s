@@ -9,7 +9,7 @@ CD - from container registry to pod ??
 *** k8s API - RESTful API over HTTP using JSON
        API Objects - collection of primitives to represent system's state. 
             Pods - one or more containers. Ephemeral.
-            Controllers - create pod, defines the desired state
+            Controllers - creates pods, defines the desired state
                   Deployment
                   ReplicaSet
             Services - networking abstraction for access to pods which adds persistency to the ephemeral pods
