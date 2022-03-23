@@ -20,13 +20,13 @@ CD - from container registry to pod ??
       Control Plane Node/Master Node
             API Server - stateless, interaction is done via kubectl
             etcd - cluster datastore, preserves state of the system
-            Scheduler
-            Controller Manager
+            Scheduler - lifecycle
+            Controller Manager - monitoring
             Cluster Add-on Pods - DNS, Ingress Controller, Dashboard, Network Overlays
       Node/Worker Node
-            Kubelet
-            Kube-proxy
-            Container Runtime
+            Kubelet - pod lifecycle
+            Kube-proxy - pod networking
+            Container Runtime - docker/containerd etc.
 
 *** Installation
       Cloud: IaaS - virtual machine, PaaS - managed service
