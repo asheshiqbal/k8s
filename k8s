@@ -30,7 +30,7 @@ CD - from container registry to pod ??
 
 *** Installation
       Cloud: IaaS - virtual machine, PaaS - managed service
-      kubeadm
+      kubeadm - k8s cluster installation tool
       CRI (Container Runtime Interface) - containerd/docker/CRI-O
       Network Ports
             6443 : API
