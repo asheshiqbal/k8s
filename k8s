@@ -44,4 +44,19 @@ CD - from container registry to pod ??
             kubelet
             kubeadm
             kubectl
-           
+      kubeadm bootstrapping:
+            pre-flight checks - permission, resources, container cuntime
+            creates CS - authentication, encryption
+            generates Kubeconfig files - how to connect to cluster API server
+                  /etc/kubernetes
+                  admin.conf, kubelet.conf, controller-manager.conf, scheduler.conf
+            generates Static Pod Manifests - describes configuration for system pods
+                  /etc/kubernets/manifests
+            waits for system pods to start
+            taints the master node - only system pods run on master node
+            generates bootstrap token - joining additonal nodes
+            starts add-on pods
+      Pod Networking
+            Direct routing
+            Overlay networking - Calico, Flannel, WeaveNet
+            
