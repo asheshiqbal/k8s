@@ -44,7 +44,4 @@ CD - from container registry to pod ??
             kubelet
             kubeadm
             kubectl
-      RHEL7:
-            yum install docker-ce docker-ce-cli containerd.io
-            yum install kubelet kubeadm kubectl
-            
+           
